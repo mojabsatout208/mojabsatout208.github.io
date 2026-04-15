@@ -555,77 +555,115 @@
 <!-- STORY -->
 <section id="story">
   <div class="fade-up">
-    <div class="section-tag">// Real Story</div>
-    <h2 class="section-title">It <span class="accent-red">Really Happened</span></h2>
+    <div class="section-tag">Real Story</div>
+    <h2 class="section-title">A <span class="accent-red">Real Experience</span></h2>
     <div class="divider"></div>
-    <div class="chat-intro">🎙 Audio interview — Lea (17) talks about how her phone got hacked. Tap each voice message to play it in order.</div>
+
+    <div class="chat-intro">
+      Audio interview about a real malware incident. Tap each voice message to play the real recording in the correct order.
+    </div>
+
     <div class="chat-container">
-      <div class="chat-msg interviewer">
-        <div class="chat-sender">Interviewer</div>
+      <div class="chat-msg victim">
+        <div class="chat-sender">John Lorenz</div>
         <div class="voice-bubble" onclick="playVoice(0)">
           <div class="play-icon" id="pi-0">▶</div>
-          <div class="waveform" id="wf-0"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>
-          <div class="voice-duration">0:12</div>
+          <div class="waveform" id="wf-0">
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+          </div>
+          <div class="voice-duration" id="dur-0">--:--</div>
         </div>
-        <div class="transcript" id="tr-0"><span class="transcript-label">Transcript</span>"Lea, how exactly did you get infected? What happened that day?"</div>
+        <audio id="audio-0" preload="metadata">
+          <source src="audio/Part-1.m4a" type="audio/mp4">
+        </audio>
+        <div class="transcript" id="tr-0">
+          <span class="transcript-label">Transcript</span>
+          Hey, I wanted to tell you what happened to me last week. I was looking for a free tool and downloaded a file from a website that did not look very professional. At first everything seemed okay, but after a short time my laptop became really slow and some strange pop-up windows appeared. Programs started to crash and the fan was running all the time. So I had the feeling something serious was wrong. Then I realized that it was probably malware and I got a bit scared because I did not know what it was doing in the background or if my data was in danger.
+        </div>
       </div>
-      <div class="chat-msg victim">
-        <div class="chat-sender">Lea, 17</div>
+
+      <div class="chat-msg interviewer">
+        <div class="chat-sender">Michael Conrad</div>
         <div class="voice-bubble" onclick="playVoice(1)">
           <div class="play-icon" id="pi-1">▶</div>
-          <div class="waveform" id="wf-1"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>
-          <div class="voice-duration">0:28</div>
+          <div class="waveform" id="wf-1">
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+          </div>
+          <div class="voice-duration" id="dur-1">--:--</div>
         </div>
-        <div class="transcript" id="tr-1"><span class="transcript-label">Transcript</span>"I downloaded a free photo editing app from a website that looked exactly like the App Store. It was free, looked legit. I didn't think anything of it."</div>
+        <audio id="audio-1" preload="metadata">
+          <source src="audio/Part-2-4.m4a" type="audio/mp4">
+        </audio>
+        <div class="transcript" id="tr-1">
+          <span class="transcript-label">Transcript</span>
+          Wow, that really sounds stressful. What did you do after you noticed that something was wrong? Did you try to fix it yourself or did you ask someone for help?
+        </div>
       </div>
-      <div class="chat-msg interviewer">
-        <div class="chat-sender">Interviewer</div>
+
+      <div class="chat-msg victim">
+        <div class="chat-sender">John Lorenz</div>
         <div class="voice-bubble" onclick="playVoice(2)">
           <div class="play-icon" id="pi-2">▶</div>
-          <div class="waveform" id="wf-2"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>
-          <div class="voice-duration">0:09</div>
+          <div class="waveform" id="wf-2">
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+          </div>
+          <div class="voice-duration" id="dur-2">--:--</div>
         </div>
-        <div class="transcript" id="tr-2"><span class="transcript-label">Transcript</span>"And then — what actually happened to your phone?"</div>
+        <audio id="audio-2" preload="metadata">
+          <source src="audio/Part-3-2.m4a" type="audio/mp4">
+        </audio>
+        <div class="transcript" id="tr-2">
+          <span class="transcript-label">Transcript</span>
+          First, I stopped everything I was doing and disconnected the laptop from the internet because I did not want the malware to send or receive more data. Then I ran a full antivirus scan, which took some time, and the program found several suspicious files that I removed. After that, I updated my system and my security software and changed the passwords for my most important accounts just to be safe. The whole situation cost me a lot of time and it was really stressful, but luckily I did not lose any important files. Now I am much more careful with downloads and links. I only use trusted websites and make regular backups so that I am better prepared if something like this happens again.
+        </div>
       </div>
-      <div class="chat-msg victim">
-        <div class="chat-sender">Lea, 17</div>
+
+      <div class="chat-msg interviewer">
+        <div class="chat-sender">Michael Conrad</div>
         <div class="voice-bubble" onclick="playVoice(3)">
           <div class="play-icon" id="pi-3">▶</div>
-          <div class="waveform" id="wf-3"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>
-          <div class="voice-duration">0:42</div>
+          <div class="waveform" id="wf-3">
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+          </div>
+          <div class="voice-duration" id="dur-3">--:--</div>
         </div>
-        <div class="transcript" id="tr-3"><span class="transcript-label">Transcript</span>"Three days later €240 disappeared from my bank account. A Trojan had installed itself silently — it read all my WhatsApp messages, sent them to unknown servers, and captured my banking credentials. I had absolutely no idea."</div>
-      </div>
-      <div class="chat-msg interviewer">
-        <div class="chat-sender">Interviewer</div>
-        <div class="voice-bubble" onclick="playVoice(4)">
-          <div class="play-icon" id="pi-4">▶</div>
-          <div class="waveform" id="wf-4"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>
-          <div class="voice-duration">0:11</div>
+        <audio id="audio-3" preload="metadata">
+          <source src="audio/Part-4-3.m4a" type="audio/mp4">
+        </audio>
+        <div class="transcript" id="tr-3">
+          <span class="transcript-label">Transcript</span>
+          Wow, thanks for telling me all this. That is really helpful. I think many people do not realize how fast malware can infect a computer and how much stress it can cause. Your story shows that it is important to react quickly, use antivirus software and change passwords when something looks strange. I will also be more careful with downloads and links now and I think your experience is a good warning for our classmates too.
         </div>
-        <div class="transcript" id="tr-4"><span class="transcript-label">Transcript</span>"How did you solve it? What steps did you take?"</div>
-      </div>
-      <div class="chat-msg victim">
-        <div class="chat-sender">Lea, 17</div>
-        <div class="voice-bubble" onclick="playVoice(5)">
-          <div class="play-icon" id="pi-5">▶</div>
-          <div class="waveform" id="wf-5"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>
-          <div class="voice-duration">0:35</div>
-        </div>
-        <div class="transcript" id="tr-5"><span class="transcript-label">Transcript</span>"Factory reset the phone. Changed every single password. Called my bank immediately. Filed a police report. Never again downloading from unknown sites — only official stores from now on. That lesson cost me €240."</div>
       </div>
     </div>
-    <div class="chat-hint" id="chat-hint">▶ Tap the first message to start</div>
+
+    <div class="chat-hint" id="chat-hint">Tap the first message to start</div>
+
     <div class="interactive-choice">
-      <div class="choice-q">// What would YOU have done?</div>
+      <div class="choice-q">What would YOU do after noticing possible malware?</div>
       <div class="choice-btns">
-        <button class="choice-btn" onclick="showChoice('a')">A) Download it — it's free, right?</button>
-        <button class="choice-btn" onclick="showChoice('b')">B) Check reviews first, then decide</button>
-        <button class="choice-btn" onclick="showChoice('c')">C) Only install from official stores. Always.</button>
+        <button class="choice-btn" onclick="showChoice('a')">A. Ignore it and keep using the computer.</button>
+        <button class="choice-btn" onclick="showChoice('b')">B. Disconnect it from the internet and run a security scan.</button>
+        <button class="choice-btn" onclick="showChoice('c')">C. Download another random tool and hope it helps.</button>
       </div>
-      <div class="choice-result" id="choice-result-a" style="background:rgba(255,34,68,0.1);border-left:3px solid var(--neon-red);color:#ffaabb;">⚠️ Risky! Free apps from unknown sources are one of the most common infection vectors. Always use the official store.</div>
-      <div class="choice-result" id="choice-result-b" style="background:rgba(255,230,0,0.08);border-left:3px solid var(--neon-yellow);color:var(--neon-yellow);">⚡ Better — but reviews can be faked. Only official sources are truly safe.</div>
-      <div class="choice-result" id="choice-result-c" style="background:rgba(0,255,136,0.08);border-left:3px solid var(--neon-green);color:var(--neon-green);">✅ Perfect! The App Store and Google Play have security checks. Third-party sites do not.</div>
+
+      <div class="choice-result" id="choice-result-a" style="background:rgba(255,34,68,0.1);border-left:3px solid var(--neon-red);color:#ffaabb;">
+        Risky. Ignoring malware can make the damage worse and give attackers more time.
+      </div>
+      <div class="choice-result" id="choice-result-b" style="background:rgba(0,255,136,0.08);border-left:3px solid var(--neon-green);color:var(--neon-green);">
+        Correct. Disconnecting the device and scanning it is one of the safest first responses.
+      </div>
+      <div class="choice-result" id="choice-result-c" style="background:rgba(255,230,0,0.08);border-left:3px solid var(--neon-yellow);color:var(--neon-yellow);">
+        Not a good idea. Unknown tools can make the problem even worse.
+      </div>
     </div>
   </div>
 </section>
@@ -817,27 +855,65 @@ function toggleGlossar(el) { const was = el.classList.contains('active'); docume
 function showChoice(id) { document.querySelectorAll('.choice-result').forEach(el => el.classList.remove('show')); document.getElementById('choice-result-'+id).classList.add('show'); }
 
 // AUDIO CHAT
-const voiceDurations = [12,28,9,42,11,35];
-let activeVoice = -1, voiceTimers = {};
-function playVoice(idx) {
-  if (activeVoice >= 0 && activeVoice !== idx) stopVoice(activeVoice);
-  const bubble = document.getElementById('wf-'+idx).closest('.voice-bubble'), pi = document.getElementById('pi-'+idx), tr = document.getElementById('tr-'+idx);
-  if (activeVoice === idx) { stopVoice(idx); return; }
-  activeVoice = idx; bubble.classList.add('playing'); pi.textContent = '⏸'; tr.classList.add('show');
-  document.getElementById('chat-hint').textContent = `Playing message ${idx+1} of ${voiceDurations.length}...`;
-  clearTimeout(voiceTimers[idx]);
-  voiceTimers[idx] = setTimeout(() => {
-    stopVoice(idx);
-    document.getElementById('chat-hint').textContent = idx < voiceDurations.length-1 ? `▶ Tap message ${idx+2} to continue` : '✅ All messages played — what would YOU have done?';
-  }, voiceDurations[idx] * 1000);
+let activeVoice = -1;
+
+function formatTime(seconds) {
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
-function stopVoice(idx) {
-  clearTimeout(voiceTimers[idx]);
-  const wf = document.getElementById('wf-'+idx); if (!wf) return;
+
+function stopVoice(idx, resetTime = false) {
+  const audio = document.getElementById(`audio-${idx}`);
+  const wf = document.getElementById(`wf-${idx}`);
+  const pi = document.getElementById(`pi-${idx}`);
+  if (!audio || !wf || !pi) return;
+  audio.pause();
+  if (resetTime) audio.currentTime = 0;
   wf.closest('.voice-bubble').classList.remove('playing');
-  document.getElementById('pi-'+idx).textContent = '▶';
+  pi.textContent = '▶';
   if (activeVoice === idx) activeVoice = -1;
 }
+
+function playVoice(idx) {
+  const audio = document.getElementById(`audio-${idx}`);
+  const bubble = document.getElementById(`wf-${idx}`).closest('.voice-bubble');
+  const pi = document.getElementById(`pi-${idx}`);
+  const tr = document.getElementById(`tr-${idx}`);
+  const hint = document.getElementById('chat-hint');
+  if (!audio) return;
+
+  document.querySelectorAll('#story audio').forEach((otherAudio, i) => {
+    if (i !== idx) stopVoice(i, true);
+  });
+
+  document.querySelectorAll('#story .transcript').forEach(el => el.classList.remove('show'));
+  if (tr) tr.classList.add('show');
+
+  if (!audio.paused) {
+    stopVoice(idx, false);
+    if (hint) hint.textContent = `Message ${idx + 1} paused`;
+    return;
+  }
+
+  audio.play();
+  activeVoice = idx;
+  bubble.classList.add('playing');
+  pi.textContent = '❚❚';
+  if (hint) hint.textContent = `Playing message ${idx + 1} of 4...`;
+}
+
+document.querySelectorAll('#story audio').forEach((audio, idx) => {
+  audio.addEventListener('loadedmetadata', () => {
+    const dur = document.getElementById(`dur-${idx}`);
+    if (dur && !isNaN(audio.duration)) dur.textContent = formatTime(audio.duration);
+  });
+  audio.addEventListener('ended', () => {
+    stopVoice(idx, true);
+    const hint = document.getElementById('chat-hint');
+    if (hint) hint.textContent = idx < 3 ? `Tap message ${idx + 2} to continue` : 'All messages played. What would YOU have done?';
+  });
+});
 
 // CARD DOTS
 const track = document.getElementById('malware-cards'), cards = track.querySelectorAll('.malware-card'), dotsWrap = document.getElementById('card-dots');
